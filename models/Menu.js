@@ -1,0 +1,29 @@
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
+class Menu extends Model {}
+  Menu.init(
+    {
+        type: {
+          type: DataTypes.STRING,
+          allowNull: false,
+          primaryKey: true,
+          autoIncrement: false,
+        },
+        food: {
+          type: DataTypes.STRING,
+          allowNull: false,
+        },
+        calories: {
+          type: DataTypes.INTEGER,
+          allowNull: false,
+          unique: true,
+          
+          },
+        },
+        {
+            sequelize,
+            timestamps: false,
+            modelName: 'menu',    
+        }
+  )
+  module.exports = Menu
