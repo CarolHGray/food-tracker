@@ -3,10 +3,17 @@ const sequelize = require('../config/connection');
 class Menu extends Model {}
   Menu.init(
     {
+      id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true,
+      },
+
         type: {
           type: DataTypes.STRING,
           allowNull: false,
-          primaryKey: true,
+          primaryKey: false,
           autoIncrement: false,
         },
         food: {
