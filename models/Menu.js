@@ -10,7 +10,7 @@ class Menu extends Model {}
         autoIncrement: true,
       },
 
-        type: {
+        foodGroup: {      
           type: DataTypes.STRING,
           allowNull: false,
           primaryKey: false,
