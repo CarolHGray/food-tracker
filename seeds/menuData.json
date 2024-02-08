@@ -1,5 +1,234 @@
-{
+[{
     "foodGroup": "fruits/vegetables",
     "food": "grapefruit",
     "calories": "40"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "cantaloupe",
+    "calories": "45"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "pineapple",
+    "calories": "72"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "mango",
+    "calories": "215"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "peach",
+    "calories": "59"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "corn",
+    "calories": "177"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "potatoes",
+    "calories": "116"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "carrots",
+    "calories": "53"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "tomatoes",
+    "calories": "36"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "asparagus",
+    "calories": "27"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "dragon fruit",
+    "calories": "119"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "mandarin oranges",
+    "calories": "42"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "raisins",
+    "calories": "62"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "watermelon",
+    "calories": "57"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "winter squash",
+    "calories": "40"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "sweet potatoe",
+    "calories": "129"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "brussel sprouts",
+    "calories": "38"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "onion",
+    "calories": "46"
+  },
+
+  {
+    "foodGroup": "fruits/vegetables",
+    "food": "spinach",
+    "calories": "7"
+  },
+
+  {
+    "foodGroup": "nuts",
+    "food": "walnuts",
+    "calories": "220"
+  },
+
+  {
+    "foodGroup": "nuts",
+    "food": "chestnuts",
+    "calories": "84"
+  },
+
+  {
+    "foodGroup": "nuts",
+    "food": "brazil",
+    "calories": "35"
+  },
+
+  {
+    "foodGroup": "nuts",
+    "food": "macadamia",
+    "calories": "219"
+  },
+
+  {
+    "foodGroup": "nuts",
+    "food": "sunflower",
+    "calories": "148"
+  },
+
+  {
+    "foodGroup": "nuts",
+    "food": "acorn",
+    "calories": "116"
+  },
+
+  {
+    "foodGroup": "nuts",
+    "food": "almond",
+    "calories": "40"
+  },
+
+  {
+    "foodGroup": "nuts",
+    "food": "pistashios",
+    "calories": "185"
+  },
+
+  {
+    "foodGroup": "nuts",
+    "food": "pecan",
+    "calories": "219"
+  },
+
+  {
+    "foodGroup": "nuts",
+    "food": "cashews",
+    "calories": "181"
+  },
+
+  {
+    "foodGroup": "meats",
+    "food": "beef",
+    "calories": "235"
+  },
+
+  {
+    "foodGroup": "meats",
+    "food": "lamb",
+    "calories": "128"
+  },
+
+  {
+    "foodGroup": "meats",
+    "food": "rabbit",
+    "calories": "228"
+  },
+
+  {
+    "foodGroup": "meats",
+    "food": "dove",
+    "calories": "196"
+  },
+
+  {
+    "foodGroup": "meats",
+    "food": "chicken breast",
+    "calories": "132"
+  },
+
+  {
+    "foodGroup": "meats",
+    "food": "wild duck",
+    "calories": "273"
+  },
+
+  {
+    "foodGroup": "meats",
+    "food": "pork chops",
+    "calories": "525"
+  },
+
+  {
+    "foodGroup": "meats",
+    "food": "pepperoni",
+    "calories": "428"
+  },
+
+  {
+    "foodGroup": "meats",
+    "food": "roasted ham",
+    "calories": "135"
+  },
+
+  {
+    "foodGroup": "meats",
+    "food": "alligator",
+    "calories": "110"
   }
+]
