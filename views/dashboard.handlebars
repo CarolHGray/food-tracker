@@ -2,11 +2,18 @@
   <h2>Dashboard</h2>
 </header>
 
+  <form action="/api/menu/select" method="post">
 <article>
+  <select name="id" id="id">
+    {{#each menuItems}}
+      <option value="{{id}}">{{food}} - calories: {{calories}}</option>
+    {{/each}}
+  </select>
   <footer>
-    <a href="#" role="button">View</a>
+    <button type="submit">Select Menu Item</button>
   </footer>
 </article>
+  </form>
 <article>
   <footer>
     <a href="#" role="button" class="secondary">Delete</a>

@@ -19,6 +19,18 @@ router.post('/', async (req, res) => {
 
 });
 
+router.post('/select', async (req, res) => {
+    try {
+        console.log('SELECTED ITEM ID', req.body.id);
+        // Figure out how to attribute selected item to user
+        res.redirect('/');
+    } catch (err) {
+        console.log(err);
+        res.sendStatus(500).end();
+    }
+
+});
+
 
 module.exports = router;
 
