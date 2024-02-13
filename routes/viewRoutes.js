@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, Menu } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -9,10 +9,15 @@ router.get('/', withAuth, async (req, res) => {
       order: [['name', 'ASC']],
     });
 
+    const menuData = await Menu.findAll({});
+
+    const menuItems = menuData.map(o => o.get({ plain: true }));
+
     const users = userData.map((project) => project.get({ plain: true }));
 
     res.render('dashboard', {
       users,
+      menuItems,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
