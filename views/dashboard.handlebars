@@ -9,33 +9,15 @@
       <option value="{{id}}">{{food}} - calories: {{calories}}</option>
     {{/each}}
   </select>
+  <div>
+    <center>
+      {{#each selectedMenuItems}}
+      <p>{{food}} - calories: {{calories}}</p>
+      {{/each}}
+    </center>
+  </div>
   <footer>
     <button type="submit">Select Menu Item</button>
   </footer>
 </article>
   </form>
-<article>
-  <footer>
-    <a href="#" role="button" class="secondary">Delete</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="contrast">Update</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="outline">Edit</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="contrast outline">Cancel</a>
-  </footer>
-</article>
-<article>
-  <footer>
-    <a href="#" role="button" class="secondary outline">Save</a>
-  </footer>
-</article>

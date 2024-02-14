@@ -2,22 +2,26 @@ const router = require('express').Router();
 const { User, Menu } = require('../models');
 const withAuth = require('../utils/auth');
 
+const serialize = (data) => JSON.parse(JSON.stringify(data));
+
 router.get('/', withAuth, async (req, res) => {
   try {
-    const userData = await User.findAll({
-      attributes: { exclude: ['password'] },
-      order: [['name', 'ASC']],
+    
+    const userData = await User.findByPk(req.session.userId,{
+      include: [Menu],
     });
 
     const menuData = await Menu.findAll({});
 
-    const menuItems = menuData.map(o => o.get({ plain: true }));
+    const menuItems = serialize(menuData);
+    const selectedMenuItems = serialize(await userData.getMenus());
 
-    const users = userData.map((project) => project.get({ plain: true }));
+    const users = serialize(userData);
 
     res.render('dashboard', {
       users,
       menuItems,
+      selectedMenuItems,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
@@ -32,6 +36,16 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/logout', (req, res) => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.redirect('/login');
+    });
+  } else {
+    res.redirect('/login');
+  }
 });
 
 module.exports = router;
