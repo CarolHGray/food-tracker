@@ -1,6 +1,8 @@
-const Menu = require('../../models/Menu');
+const { Menu, User } = require('../../models');
 
 const router = require('express').Router();
+
+const serialize = (data) => JSON.parse(JSON.stringify(data));
 
 // route to get all dishes
 router.get('/', async (req, res) => {
@@ -9,6 +11,7 @@ router.get('/', async (req, res) => {
     });
      const menuItems = menuData.map((menuItem) => menuItem.get({ plain: true }));
      res.render('index', { menuItems });
+
 //res.json(menuData);
 
     });
@@ -21,8 +24,12 @@ router.post('/', async (req, res) => {
 
 router.post('/select', async (req, res) => {
     try {
-        console.log('SELECTED ITEM ID', req.body.id);
-        // Figure out how to attribute selected item to user
+        const user = await User.findByPk(req.session.userId, { include: [Menu]});
+        const { menus } = serialize(user);
+        if (!menus.map(o => String(o.id)).includes(req.body.id)) {
+            await user.addMenu(req.body.id);
+        }
+        await user.save();
         res.redirect('/');
     } catch (err) {
         console.log(err);

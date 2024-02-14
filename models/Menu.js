@@ -23,11 +23,19 @@ class Menu extends Model {}
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-    },
+      user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+         model: 'user',
+         key: 'id',
+        }
+      }
+     },
     {
         sequelize,
         timestamps: false,
         modelName: 'menu',    
+        freezeTableName: true,
     }
   )
-  module.exports = Menu
+  module.exports = Menu;

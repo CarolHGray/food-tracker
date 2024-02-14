@@ -7,33 +7,22 @@
   <title>FOOD TRACKER</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <link rel="stylesheet" href="/css/style.css">
-   <style>
-        body {
-            background-image: url("./public/assets/calorie_track.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+  
 </head>
 
 <body>
+  <main class="container">
   <header>
-    <h1>
-      Food Tracker
+    
     </h1>
     {{#if loggedIn}}
     <nav>
-      <button class="btn" id="logout">logout</button>
+      <a href="/logout" class="btn" id="logout"><button>logout</button></a>
     </nav>
     {{/if}}
   </header>
-  <main class="container">
     {{{body}}}
   </main>
-
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
 </body>
 
 </html>

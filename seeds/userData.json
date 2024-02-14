@@ -8,5 +8,17 @@
     "name": "Blake",
     "email": "the_blake@yahoo.com",
     "password": "password12345"
+  },
+  {
+    "name": "Travis",
+    "email": "Kelce87@gmail.com",
+    "password": "password12345"
+  },
+
+  {
+    "name": "Taylor",
+    "email": "Swift@gmail.com",
+    "password": "password12345"
   }
+
 ]
