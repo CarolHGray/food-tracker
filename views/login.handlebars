@@ -1,5 +1,4 @@
 <h2>Login</h2>
-
 <form class="form login-form" action="/api/users/login" method="POST">
   <div class="form-group">
     <label for="email-login">Email:</label>
@@ -13,4 +12,22 @@
     <button class="btn btn-primary" type="submit">Login</button>
   </div>
 </form>
-
+<hr>
+<h2>Sign Up</h2>
+<form class="form signup-form" action="/api/users/signup" method="POST">
+  <div class="form-group">
+    <label for="email-signup">Username:</label>
+    <input class="form-input" id="username" name="username" />
+  </div>
+  <div class="form-group">
+    <label for="email-signup">Email:</label>
+    <input class="form-input" type="email" id="email" name="email" />
+  </div>
+  <div class="form-group">
+    <label for="password-signup">Password:</label>
+    <input class="form-input" type="password" id="password" name="password" />
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" type="submit">Sign Up</button>
+  </div>
+</form>
